@@ -1,3 +1,4 @@
 VER=2.5.0
 SRCS="tbl::https://github.com/johnfactotum/foliate/archive/$VER.tar.gz"
 CHKSUMS="sha256::3b5317b96ccb19aaa79a1ff0a751a7cc5f8607649681c42900daf0f02a4da672"
+REL=1
