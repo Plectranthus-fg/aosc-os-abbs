@@ -1,3 +1,4 @@
 VER=5.79.0
 SRCS="tbl::https://download.kde.org/stable/frameworks/${VER:0:4}/extra-cmake-modules-$VER.tar.xz"
 CHKSUMS="sha256::b29602db99c566d88fa92106abe114bd57b7ffc6ca20773426f896ffde68bed8"
+REL=1
