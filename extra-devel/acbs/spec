@@ -1,4 +1,4 @@
 VER=0+git20210227
 REL=1
 SRCS="git::commit=8340d04ff9251e95f9cfa1b260e99b9f4ee37baf::https://github.com/AOSC-Dev/acbs"
-CHKSUM="SKIP"
+CHKSUMS="SKIP"
