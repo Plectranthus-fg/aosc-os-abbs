@@ -1,3 +1,3 @@
 VER=2.2.0
 SRCS="tbl::https://www.samba.org/ftp/pub/ldb/ldb-$VER.tar.gz"
-CHKSUMS="sha256::ddf7f770643e0a0dda60f2818913f883caeed37fa1e8d6eda0dfe9588c1e3a83"
+CHKSUMS="sha256::134bb51769709af59f30bf468e454d1377a8096acd4e80dcb42fd264f558bd5f"
