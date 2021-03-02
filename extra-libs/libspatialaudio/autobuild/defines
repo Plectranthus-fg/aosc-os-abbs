@@ -1,0 +1,4 @@
+PKGNAME=libspatialaudio
+PKGSEC=sound
+PKGDEP="libmysofa"
+PKGDES="A library for handling DWARF debugging information format"

@@ -1,0 +1,12 @@
+diff -Naur libspatialaudio-0.3.0/CMakeLists.txt libspatialaudio-0.3.0.mod/CMakeLists.txt
+--- libspatialaudio-0.3.0/CMakeLists.txt	2021-03-01 23:49:58.844181709 -0600
++++ libspatialaudio-0.3.0.mod/CMakeLists.txt	2021-03-01 23:49:42.249206618 -0600
+@@ -67,7 +67,7 @@
+     include_directories(${MYSOFA_INCLUDE_DIRS})
+ endif(${MYSOFA_FOUND})
+ 
+-add_library(spatialaudio STATIC ${sources})
++add_library(spatialaudio SHARED ${sources})
+ 
+ if(${MYSOFA_FOUND})
+     target_link_libraries(spatialaudio ${MYSOFA_LIBRARIES})
