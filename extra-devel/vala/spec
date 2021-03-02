@@ -1,3 +1,3 @@
 VER=0.50.4
 SRCS="https://download.gnome.org/sources/vala/${VER:0:4}/vala-$VER.tar.xz"
-CHKSUMS="sha256::2c0d5dc6d65d070f724063075424c403765ab7935c9e6fbcb84981b94d07ceda"
+CHKSUMS="sha256::58fc31fa8bf492035b11d1a7d514801710afc65bd458b24c0f8d00280a92a38c"
