@@ -1,0 +1,8 @@
+PKGNAME=libmysofa
+PKGSEC=sound
+PKGDEP="zlib"
+PKGDES="C library for reading AES69-2015 spatial oriented sound format"
+
+CMAKE_AFTER="
+	-DBUILD_TESTS=OFF
+"
