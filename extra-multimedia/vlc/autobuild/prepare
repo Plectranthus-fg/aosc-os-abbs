@@ -1,2 +1,2 @@
-autoreconf -fi
+export QT_SELECT=5
 export BUILDCC=gcc

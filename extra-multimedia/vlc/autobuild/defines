@@ -1,16 +1,44 @@
 PKGNAME=vlc
 PKGSEC=video
-PKGDEP="mesa flac qt-5 sdl-image a52dec aalib libass atk avahi libavc1394 \
+PKGDEP="mesa flac qt-5 sdl-image a52dec aalib libass avahi libavc1394 \
         ffmpeg libbluray libcaca cairo libcddb libcdio chromaprint \
-        dbus libdc1394 dcadec libdvbpsi libdvdnav libdvdread libebml faad2 fluidsynth \
-        fontconfig freetype fribidi gcc-runtime gconf libgcrypt gtk-2 game-music-emu \
+        dbus libdc1394 libdca libdvbpsi libdvdnav libdvdread libebml faad2 fluidsynth \
+        fontconfig freetype fribidi gcc-runtime gconf libgcrypt gtk-3 game-music-emu \
         gnome-vfs gnutls libgpg-error gst-plugins-base-1-0 libidn libupnp \
         jack libjpeg-turbo lua libmad libmatroska libmodplug libmpcdec libmpeg2 \
         libmtp libnotify libogg opus libpng pulseaudio libraw1394 librsvg libsamplerate \
         schroedinger libshout samba speex libssh2 taglib libtar libtheora twolame systemd \
         libva-vdpau-driver vcdimager libvncserver libvorbis libvpx x264 \
-        x265 xcb-util-keysyms libxml2 zlib libnfs libva goom2k4"
+        x265 xcb-util-keysyms libxml2 zlib libnfs libva goom2k4 zvbi libspatialaudio"
 PKGDEP__AMD64="${PKGDEP} libcrystalhd libva-intel-driver"
 PKGDES="Video player from VideoLAN"
 
 NOLTO=1
+
+AUTOTOOLS_AFTER="
+	--enable-faad
+	--enable-nls
+	--enable-lirc
+	--enable-realrtsp
+	--enable-aa
+	--enable-upnp
+	--enable-opus
+	--enable-sftp
+	--enable-crystalhd
+	--disable-freerdp
+	--disable-xvideo
+	--enable-gles2
+	--enable-qt
+	--enable-jack
+	--enable-bluray
+	--enable-avahi
+	--disable-opencv
+"
+AUTOTOOLS_AFTER__AMD64="
+	${AUTOTOOLS_AFTER}
+	--enable-crystalhd
+"
+AUTOTOOLS_AFTER__PPC64="
+	${AUTOTOOLS_AFTER}
+	--disable-altivec
+"
