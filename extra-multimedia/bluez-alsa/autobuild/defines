@@ -1,0 +1,17 @@
+PKGNAME=bluez-alsa
+PKGDES="ALSA PCM adapter for bluez"
+PKGSEC=sound
+PKGDEP="bluez sbc glib libfdk-aac libldac upower mpg123 lame libopenaptx dbus"
+BUILDDEP="ofono docutils pandoc"
+
+AUTOTOOLS_AFTER="
+	--enable-aac
+	--enable-upower
+	--enable-ldac
+	--enable-mp3lame
+	--enable-mpg123
+	--enable-ofono
+	--enable-msbc
+	--enable-manpages
+	--enable-a2dpconf
+"
